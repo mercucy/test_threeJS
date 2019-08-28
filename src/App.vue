@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-    <h1>shit</h1>
-    <div id="pointset" style="width:800px;height:500px"></div>
+    <h1>某项目点位分布图</h1>
+    <div id="pointset" style="width:800px;height:700px"></div>
   </div>
 </template>
 
 <script>
 import * as THREE from "three";
+import OrbitControls from "three-orbitcontrols";
 
 export default {
   name: "App",
   data() {
     return {
-      points: [],
-      markers: [],
-      map: ""
+      points: []
     };
   },
   mounted() {
@@ -29,60 +28,81 @@ export default {
       //加载数据
       this.points = JSON.parse(newLocal);
     },
-    showMap() {
-      let that = this;
-      this.map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: { lat: 52.52, lng: 13.41 }
-      });
-    },
-    addMarker() {
-      let that = this;
-      setInterval(function() {
-        let position = {
-          lat: 52.511 + Math.random() / 100,
-          lng: 13.447 + Math.random() / 100
-        };
-        that.markers.push(
-          new google.maps.Marker({
-            position: position,
-            map: that.map
-          })
-        );
-      }, 2000);
-    },
     showPoint() {
-      let wind = document.getElementById("pointset");
+      var wind = document.getElementById("pointset");
+      let width = wind.clientWidth;
+      let height = wind.clientHeight;
 
-      let renderer = new THREE.WebGLRenderer();
-      renderer.setSize(wind.clientWidth, wind.clientHeight);
-      wind.appendChild(renderer.domElement);
-
-      let camera = new THREE.PerspectiveCamera(
-        75,
-        wind.clientWidth / wind.clientHeight,
-        0.1,
-        2000
-      );
-      camera.position.set(900, 900, 5);
-      camera.lookAt(1200, 1200, 15);
-
+      //创建一个场景
       let scene = new THREE.Scene();
 
-      let material = new THREE.LineBasicMaterial({ color: 0x0000ff });
+      //创建一个具有透视效果的相机
+      let camera = new THREE.PerspectiveCamera(45, width / width, 0.1, 1000);
 
-      let geometry = new THREE.Geometry();
+      //设置相机位置
+      camera.position.set(100, 100, 100);
+      camera.lookAt(new THREE.Vector3(0, 0, 0));
 
-      for (let i = 0; i < this.points.length; i++) {
-        geometry.vertices.push(
-          new THREE.Vector3(points[i].x, points[i].y, points[i].z)
+      //创建渲染器
+      var renderer = new THREE.WebGLRenderer({
+        antialias: true
+      });
+
+      //设置渲染器背景色与尺寸
+      renderer.setClearColor(0x000000);
+      renderer.setSize(width, height);
+
+      //将渲染器加载到html
+      wind.appendChild(renderer.domElement);
+
+      //创建环境光
+      let ambientLight = new THREE.AmbientLight(0x777777);
+      scene.add(ambientLight);
+
+      //添加聚光灯
+      let spotLight = new THREE.SpotLight(0xaaaaaa);
+      spotLight.position.set(-40, 40, 40);
+      scene.add(spotLight);
+
+      var axisHelper = THREE.AxisHelper(30); //15为坐标轴长度
+      scene.add(axisHelper);
+
+      // 初始化摄像机插件（用于拖拽旋转摄像机，产生交互效果）
+      var orbitControls = new OrbitControls(camera);
+      orbitControls.autoRotate = true;
+
+      //添加散点
+      var points = [];
+      var geometry = new THREE.Geometry();
+      let ave_x=0;
+      let ave_y=0;
+      let ave_z=0;
+      for (var i = 0; i < this.points.length; i++) {
+        ave_x+=this.points[i].x;
+        ave_y+=this.points[i].y;
+        ave_z+=this.points[i].z;}
+        ave_x = ave_x/this.points.length;
+        ave_y = ave_y/this.points.length;
+        ave_z = ave_z/this.points.length;
+        for (var i = 0; i < this.points.length; i++) {
+        var vertex = new THREE.Vector3(
+          this.points[i].x-ave_x,
+          this.points[i].y-ave_y,
+          this.points[i].z-ave_z
         );
+        geometry.vertices.push(vertex);
+      }
+      var material = new THREE.PointsMaterial({ size: 2, color: 0xffffff });
+      var partcle = new THREE.Points(geometry, material);
+      scene.add(partcle);
+
+      function render() {
+        // 渲染，即摄像机拍下此刻的场景
+        renderer.render(scene, camera);
+        requestAnimationFrame(render);
       }
 
-      let line = new THREE.Line(geometry, material);
-
-      scene.add(line);
-      renderer.render(scene, camera);
+      render();
     }
   }
 };
