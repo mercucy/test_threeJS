@@ -28,6 +28,56 @@ export default {
       //加载数据
       this.points = JSON.parse(newLocal);
     },
+    get_param_for_THREE(points, xita) {
+      //添加散点
+      let max_x = points[0].x;
+      let max_y = points[0].y;
+      let max_z = points[0].z;
+      let min_x = points[0].x;
+      let min_y = points[0].y;
+      let min_z = points[0].z;
+      for (var i = 0; i < points.length; i++) {
+        max_x = points[i].x > max_x ? points[i].x : max_x;
+        min_x = points[i].x < min_x ? points[i].x : min_x;
+        max_y = points[i].y > max_y ? points[i].y : max_y;
+        min_y = points[i].y < min_y ? points[i].y : min_y;
+        max_z = points[i].z > max_z ? points[i].z : max_z;
+        min_z = points[i].z < min_z ? points[i].z : min_z;
+      }
+
+      let dx = max_x - min_x;
+      let dy = max_y - min_y;
+      let dz = max_z - min_z;
+
+      //决定视线方向
+      let dre = dx > dy ? "y" : "x";
+      let x = 0;
+      let y = 0;
+      let z = 0;
+      let s = 0;
+
+      if (dre === "x") {
+        x = (0.5 * dy) / Math.tan(xita * 0.5) + min_x;
+        y = min_y + 0.5 * dy;
+        z = min_z + 0.5 * dz;
+        s = x - min_x;
+      } else {
+        x = min_x + 0.5 * dx;
+        y = (0.5 * dx) / Math.tan(xita * 0.5) + min_y;
+        z = min_z + 0.5 * dz;
+        s = y - min_y;
+      }
+
+      return {
+        x: x,
+        y: y,
+        z: z,
+        s: s,
+        x0: min_x + 0.5 * dx,
+        y0: min_y + 0.5 * dy,
+        z0: min_z + 0.5 * dz
+      };
+    },
     showPoint() {
       var wind = document.getElementById("pointset");
       let width = wind.clientWidth;
@@ -36,12 +86,26 @@ export default {
       //创建一个场景
       let scene = new THREE.Scene();
 
+      //计算渲染参数的函数
+      let sita = 60; //视角，60°
+      let param_res = this.get_param_for_THREE(
+        this.points,
+        (Math.PI * sita) / 180
+      );
+
       //创建一个具有透视效果的相机
-      let camera = new THREE.PerspectiveCamera(45, width / width, 0.1, 1000);
+      let camera = new THREE.PerspectiveCamera(
+        80,
+        width / width,
+        0.1,
+        param_res.x0,
+        param_res.y0,
+        param_res.z0
+      );
 
       //设置相机位置
-      camera.position.set(100, 100, 100);
-      camera.lookAt(new THREE.Vector3(0, 0, 0));
+      camera.position.set(param_res.x, param_res.y, param_res.z);
+      camera.lookAt({ x: param_res.x0, y: param_res.y0, z: param_res.z0 });
 
       //创建渲染器
       var renderer = new THREE.WebGLRenderer({
@@ -64,31 +128,22 @@ export default {
       spotLight.position.set(-40, 40, 40);
       scene.add(spotLight);
 
-      var axisHelper = THREE.AxisHelper(30); //15为坐标轴长度
-      scene.add(axisHelper);
-
       // 初始化摄像机插件（用于拖拽旋转摄像机，产生交互效果）
       var orbitControls = new OrbitControls(camera);
       orbitControls.autoRotate = true;
+      orbitControls.object.position.set(param_res.x, param_res.y, param_res.z);
+      orbitControls.target = new THREE.Vector3(
+        param_res.x0,
+        param_res.y0,
+        param_res.z0
+      );
 
-      //添加散点
-      var points = [];
       var geometry = new THREE.Geometry();
-      let ave_x=0;
-      let ave_y=0;
-      let ave_z=0;
       for (var i = 0; i < this.points.length; i++) {
-        ave_x+=this.points[i].x;
-        ave_y+=this.points[i].y;
-        ave_z+=this.points[i].z;}
-        ave_x = ave_x/this.points.length;
-        ave_y = ave_y/this.points.length;
-        ave_z = ave_z/this.points.length;
-        for (var i = 0; i < this.points.length; i++) {
         var vertex = new THREE.Vector3(
-          this.points[i].x-ave_x,
-          this.points[i].y-ave_y,
-          this.points[i].z-ave_z
+          this.points[i].x,
+          this.points[i].y,
+          this.points[i].z
         );
         geometry.vertices.push(vertex);
       }
@@ -96,13 +151,13 @@ export default {
       var partcle = new THREE.Points(geometry, material);
       scene.add(partcle);
 
-      function render() {
+      function render(param_res) {
         // 渲染，即摄像机拍下此刻的场景
         renderer.render(scene, camera);
         requestAnimationFrame(render);
       }
 
-      render();
+      render(param_res);
     }
   }
 };
