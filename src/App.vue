@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>某项目点位分布图</h1>
-    <div id="pointset" style="width:800px;height:700px"></div>
+    <div id="pointset" style="width:1600px;height:700px"></div>
   </div>
 </template>
 
@@ -113,7 +113,7 @@ export default {
       });
 
       //设置渲染器背景色与尺寸
-      renderer.setClearColor(0x000000);
+      renderer.setClearColor(new THREE.Color(0xeeeeee));
       renderer.setSize(width, height);
 
       //将渲染器加载到html
@@ -138,7 +138,21 @@ export default {
         param_res.z0
       );
 
-      var geometry = new THREE.Geometry();
+      for (let i = 0; i < this.points.length; i++) {
+        var sphereGeometry = new THREE.SphereGeometry(0.5, 10, 10);
+        var sphereMaterial =
+          this.points[i].point_type === 0
+            ? new THREE.MeshLambertMaterial({ color: 0x77ff77 })
+            : this.points[i].point_type === 1
+            ? new THREE.MeshLambertMaterial({ color: 0xFF3030 })
+            : new THREE.MeshLambertMaterial({ color: 0xFF3030 });
+        var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+        sphere.position.x = this.points[i].x;
+        sphere.position.y = this.points[i].y;
+        sphere.position.z = this.points[i].z;
+        scene.add(sphere);
+      }
+      /*var geometry = new THREE.Geometry();
       for (var i = 0; i < this.points.length; i++) {
         var vertex = new THREE.Vector3(
           this.points[i].x,
@@ -149,7 +163,7 @@ export default {
       }
       var material = new THREE.PointsMaterial({ size: 2, color: 0xffffff });
       var partcle = new THREE.Points(geometry, material);
-      scene.add(partcle);
+      scene.add(partcle);*/
 
       function render(param_res) {
         // 渲染，即摄像机拍下此刻的场景
