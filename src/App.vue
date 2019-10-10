@@ -27,170 +27,217 @@ export default {
         '[{"name":"A01","point_type":1,"target_type":0,"prism_const":0,"x":943.9656,"y":1011.2714,"z":10.9276,"mile":1,"ring_num":"10106","section_num":"A"},{"name":"A02","point_type":1,"target_type":0,"prism_const":0,"x":953.8692,"y":1009.3857,"z":10.8801,"mile":2,"ring_num":"10116","section_num":"A"},{"name":"A03","point_type":1,"target_type":0,"prism_const":0,"x":964.2186,"y":1007.7093,"z":10.8441,"mile":3,"ring_num":"10126","section_num":"A"},{"name":"A04","point_type":1,"target_type":0,"prism_const":0,"x":973.128,"y":1006.5354,"z":10.894,"mile":4,"ring_num":"10136","section_num":"A"},{"name":"A05","point_type":1,"target_type":0,"prism_const":0,"x":976.9869,"y":1006.1418,"z":10.8388,"mile":5,"ring_num":"10141","section_num":"A"},{"name":"A06","point_type":1,"target_type":0,"prism_const":0,"x":983.3007,"y":1005.6039,"z":10.7819,"mile":6,"ring_num":"10146","section_num":"A"},{"name":"A07","point_type":1,"target_type":0,"prism_const":0,"x":988.7069,"y":1005.1235,"z":10.8691,"mile":7,"ring_num":"10151","section_num":"A"},{"name":"A08","point_type":1,"target_type":0,"prism_const":0,"x":992.9988,"y":1004.8395,"z":10.8408,"mile":8,"ring_num":"10156","section_num":"A"},{"name":"A09","point_type":1,"target_type":0,"prism_const":0,"x":998.0319,"y":1004.5763,"z":10.8392,"mile":9,"ring_num":"10161","section_num":"A"},{"name":"A10","point_type":1,"target_type":0,"prism_const":0,"x":1003.5259,"y":1004.3656,"z":10.8261,"mile":10,"ring_num":"10166","section_num":"A"},{"name":"A11","point_type":1,"target_type":0,"prism_const":0,"x":1008.2126,"y":1004.257,"z":10.7884,"mile":11,"ring_num":"10171","section_num":"A"},{"name":"A12","point_type":1,"target_type":0,"prism_const":0,"x":1013.6389,"y":1004.2292,"z":10.7804,"mile":12,"ring_num":"10176","section_num":"A"},{"name":"A13","point_type":1,"target_type":0,"prism_const":0,"x":1018.5762,"y":1004.2352,"z":10.8227,"mile":13,"ring_num":"10181","section_num":"A"},{"name":"A14","point_type":1,"target_type":0,"prism_const":0,"x":1023.2512,"y":1004.3892,"z":10.7285,"mile":14,"ring_num":"10186","section_num":"A"},{"name":"A15","point_type":1,"target_type":0,"prism_const":0,"x":1028.9147,"y":1004.6048,"z":10.6998,"mile":15,"ring_num":"10191","section_num":"A"},{"name":"A16","point_type":1,"target_type":0,"prism_const":0,"x":1034.209,"y":1004.9323,"z":10.6602,"mile":16,"ring_num":"10196","section_num":"A"},{"name":"A17","point_type":1,"target_type":0,"prism_const":0,"x":1038.9473,"y":1005.2426,"z":10.662,"mile":17,"ring_num":"10201","section_num":"A"},{"name":"A18","point_type":1,"target_type":0,"prism_const":0,"x":1043.4753,"y":1005.6329,"z":10.6475,"mile":18,"ring_num":"10206","section_num":"A"},{"name":"A19","point_type":1,"target_type":0,"prism_const":0,"x":1048.4765,"y":1006.0747,"z":10.7192,"mile":19,"ring_num":"10211","section_num":"A"},{"name":"A20","point_type":1,"target_type":0,"prism_const":0,"x":1054.231,"y":1006.7927,"z":10.6216,"mile":20,"ring_num":"10216","section_num":"A"},{"name":"A21","point_type":1,"target_type":0,"prism_const":0,"x":1059.001,"y":1007.3811,"z":10.642,"mile":21,"ring_num":"10221","section_num":"A"},{"name":"A22","point_type":1,"target_type":0,"prism_const":0,"x":1063.497,"y":1008.1133,"z":10.5598,"mile":22,"ring_num":"10226","section_num":"A"},{"name":"A23","point_type":1,"target_type":0,"prism_const":0,"x":1068.4367,"y":1008.8944,"z":10.574,"mile":23,"ring_num":"10231","section_num":"A"},{"name":"A24","point_type":1,"target_type":0,"prism_const":0,"x":1073.3023,"y":1009.7338,"z":10.5092,"mile":24,"ring_num":"10236","section_num":"A"},{"name":"A25","point_type":1,"target_type":0,"prism_const":0,"x":1078.2867,"y":1010.7024,"z":10.4963,"mile":25,"ring_num":"10241","section_num":"A"},{"name":"A26","point_type":1,"target_type":0,"prism_const":0,"x":1082.9885,"y":1011.6387,"z":10.5238,"mile":26,"ring_num":"10246","section_num":"A"},{"name":"A27","point_type":1,"target_type":0,"prism_const":0,"x":1091.7932,"y":1013.7066,"z":10.4202,"mile":27,"ring_num":"10256","section_num":"A"},{"name":"A28","point_type":1,"target_type":0,"prism_const":0,"x":1101.8674,"y":1016.3083,"z":10.3575,"mile":28,"ring_num":"10266","section_num":"A"},{"name":"A29","point_type":1,"target_type":0,"prism_const":0,"x":1109.9432,"y":1018.64,"z":10.3408,"mile":29,"ring_num":"10276","section_num":"A"},{"name":"C01","point_type":1,"target_type":0,"prism_const":0,"x":943.706,"y":1007.9607,"z":7.3344,"mile":1,"ring_num":"10106","section_num":"A"},{"name":"C02","point_type":1,"target_type":0,"prism_const":0,"x":950.833,"y":1006.577,"z":7.3126,"mile":2,"ring_num":"10116","section_num":"A"},{"name":"C03","point_type":1,"target_type":0,"prism_const":0,"x":963.8401,"y":1004.5728,"z":7.2543,"mile":3,"ring_num":"10126","section_num":"A"},{"name":"C04","point_type":1,"target_type":0,"prism_const":0,"x":973.2448,"y":1003.2756,"z":7.2212,"mile":4,"ring_num":"10136","section_num":"A"},{"name":"C05","point_type":1,"target_type":0,"prism_const":0,"x":976.8459,"y":1002.9742,"z":7.2096,"mile":5,"ring_num":"10141","section_num":"A"},{"name":"C06","point_type":1,"target_type":0,"prism_const":0,"x":982.9132,"y":1002.3686,"z":7.1906,"mile":6,"ring_num":"10146","section_num":"A"},{"name":"C07","point_type":1,"target_type":0,"prism_const":0,"x":988.8531,"y":1001.9134,"z":7.1765,"mile":7,"ring_num":"10151","section_num":"A"},{"name":"C08","point_type":1,"target_type":0,"prism_const":0,"x":993.4615,"y":1001.6595,"z":7.1475,"mile":8,"ring_num":"10156","section_num":"A"},{"name":"C09","point_type":1,"target_type":0,"prism_const":0,"x":997.03,"y":1001.531,"z":7.1317,"mile":9,"ring_num":"10161","section_num":"A"},{"name":"C10","point_type":1,"target_type":0,"prism_const":0,"x":1004.3268,"y":1001.249,"z":7.1178,"mile":10,"ring_num":"10166","section_num":"A"},{"name":"C11","point_type":1,"target_type":0,"prism_const":0,"x":1008.0483,"y":1001.1291,"z":7.1029,"mile":11,"ring_num":"10171","section_num":"A"},{"name":"C12","point_type":1,"target_type":0,"prism_const":0,"x":1013.8661,"y":1001.1382,"z":7.0834,"mile":12,"ring_num":"10176","section_num":"A"},{"name":"C13","point_type":1,"target_type":0,"prism_const":0,"x":1018.7587,"y":1001.2001,"z":7.0685,"mile":13,"ring_num":"10181","section_num":"A"},{"name":"C14","point_type":1,"target_type":0,"prism_const":0,"x":1023.534,"y":1001.3417,"z":7.0477,"mile":14,"ring_num":"10186","section_num":"A"},{"name":"C15","point_type":1,"target_type":0,"prism_const":0,"x":1029.5358,"y":1001.5781,"z":7.0235,"mile":15,"ring_num":"10191","section_num":"A"},{"name":"C16","point_type":1,"target_type":0,"prism_const":0,"x":1034.2211,"y":1001.7169,"z":7.0126,"mile":16,"ring_num":"10196","section_num":"A"},{"name":"C17","point_type":1,"target_type":0,"prism_const":0,"x":1038.9425,"y":1002.1494,"z":6.9919,"mile":17,"ring_num":"10201","section_num":"A"},{"name":"C18","point_type":1,"target_type":0,"prism_const":0,"x":1043.6854,"y":1002.5744,"z":6.9739,"mile":18,"ring_num":"10206","section_num":"A"},{"name":"C19","point_type":1,"target_type":0,"prism_const":0,"x":1049.5483,"y":1003.1554,"z":6.9499,"mile":19,"ring_num":"10211","section_num":"A"},{"name":"C20","point_type":1,"target_type":0,"prism_const":0,"x":1054.0895,"y":1005.2853,"z":6.8735,"mile":20,"ring_num":"10216","section_num":"A"},{"name":"C21","point_type":1,"target_type":0,"prism_const":0,"x":1060.4603,"y":1004.613,"z":6.9051,"mile":21,"ring_num":"10221","section_num":"A"},{"name":"C22","point_type":1,"target_type":0,"prism_const":0,"x":1063.9093,"y":1005.1074,"z":6.8943,"mile":22,"ring_num":"10226","section_num":"A"},{"name":"C23","point_type":1,"target_type":0,"prism_const":0,"x":1068.6921,"y":1005.8813,"z":6.8749,"mile":23,"ring_num":"10231","section_num":"A"},{"name":"C24","point_type":1,"target_type":0,"prism_const":0,"x":1074.5105,"y":1006.8814,"z":6.8491,"mile":24,"ring_num":"10236","section_num":"A"},{"name":"C25","point_type":1,"target_type":0,"prism_const":0,"x":1079.2165,"y":1007.784,"z":6.8268,"mile":25,"ring_num":"10241","section_num":"A"},{"name":"C26","point_type":1,"target_type":0,"prism_const":0,"x":1083.9124,"y":1008.7729,"z":6.7972,"mile":26,"ring_num":"10246","section_num":"A"},{"name":"C27","point_type":1,"target_type":0,"prism_const":0,"x":1091.9891,"y":1010.5038,"z":6.7694,"mile":27,"ring_num":"10256","section_num":"A"},{"name":"C28","point_type":1,"target_type":0,"prism_const":0,"x":1101.3692,"y":1012.9235,"z":6.7148,"mile":28,"ring_num":"10266","section_num":"A"},{"name":"C29","point_type":1,"target_type":0,"prism_const":0,"x":1111.4925,"y":1015.9187,"z":6.6729,"mile":29,"ring_num":"10276","section_num":"A"},{"name":"D01","point_type":1,"target_type":0,"prism_const":0,"x":943.4909,"y":1009.6961,"z":7.2862,"mile":1,"ring_num":"10106","section_num":"A"},{"name":"D02","point_type":1,"target_type":0,"prism_const":0,"x":952.9465,"y":1007.8603,"z":7.2514,"mile":2,"ring_num":"10116","section_num":"A"},{"name":"D03","point_type":1,"target_type":0,"prism_const":0,"x":964.0135,"y":1006.0949,"z":7.2092,"mile":3,"ring_num":"10126","section_num":"A"},{"name":"D04","point_type":1,"target_type":0,"prism_const":0,"x":972.9249,"y":1004.9386,"z":7.1759,"mile":4,"ring_num":"10136","section_num":"A"},{"name":"D05","point_type":1,"target_type":0,"prism_const":0,"x":977.0176,"y":1004.4831,"z":7.1605,"mile":5,"ring_num":"10141","section_num":"A"},{"name":"D06","point_type":1,"target_type":0,"prism_const":0,"x":982.9892,"y":1003.8653,"z":7.1414,"mile":6,"ring_num":"10146","section_num":"A"},{"name":"D07","point_type":1,"target_type":0,"prism_const":0,"x":988.9023,"y":1003.4586,"z":7.1193,"mile":7,"ring_num":"10151","section_num":"A"},{"name":"D08","point_type":1,"target_type":0,"prism_const":0,"x":993.052,"y":1003.2107,"z":7.1029,"mile":8,"ring_num":"10156","section_num":"A"},{"name":"D09","point_type":1,"target_type":0,"prism_const":0,"x":998.3655,"y":1002.9522,"z":7.0709,"mile":9,"ring_num":"10161","section_num":"A"},{"name":"D10","point_type":1,"target_type":0,"prism_const":0,"x":1003.8218,"y":1002.7732,"z":7.0654,"mile":10,"ring_num":"10166","section_num":"A"},{"name":"D11","point_type":1,"target_type":0,"prism_const":0,"x":1008.1047,"y":1002.6917,"z":7.052,"mile":11,"ring_num":"10171","section_num":"A"},{"name":"D12","point_type":1,"target_type":0,"prism_const":0,"x":1013.8881,"y":1002.6685,"z":7.0317,"mile":12,"ring_num":"10176","section_num":"A"},{"name":"D13","point_type":1,"target_type":0,"prism_const":0,"x":1018.7032,"y":1002.7104,"z":7.0098,"mile":13,"ring_num":"10181","section_num":"A"},{"name":"D14","point_type":1,"target_type":0,"prism_const":0,"x":1023.4947,"y":1002.8419,"z":6.996,"mile":14,"ring_num":"10186","section_num":"A"},{"name":"D15","point_type":1,"target_type":0,"prism_const":0,"x":1029.3945,"y":1003.0768,"z":6.9709,"mile":15,"ring_num":"10191","section_num":"A"},{"name":"D16","point_type":1,"target_type":0,"prism_const":0,"x":1034.5104,"y":1003.3664,"z":6.9495,"mile":16,"ring_num":"10196","section_num":"A"},{"name":"D17","point_type":1,"target_type":0,"prism_const":0,"x":1038.7918,"y":1003.6811,"z":6.9459,"mile":17,"ring_num":"10201","section_num":"A"},{"name":"D18","point_type":1,"target_type":0,"prism_const":0,"x":1043.5033,"y":1004.1111,"z":6.921,"mile":18,"ring_num":"10206","section_num":"A"},{"name":"D19","point_type":1,"target_type":0,"prism_const":0,"x":1048.7562,"y":1004.6442,"z":6.9041,"mile":19,"ring_num":"10211","section_num":"A"},{"name":"D20","point_type":1,"target_type":0,"prism_const":0,"x":1051.9495,"y":1003.4103,"z":6.9303,"mile":20,"ring_num":"10216","section_num":"A"},{"name":"D21","point_type":1,"target_type":0,"prism_const":0,"x":1058.9996,"y":1005.9009,"z":6.8487,"mile":21,"ring_num":"10221","section_num":"A"},{"name":"D22","point_type":1,"target_type":0,"prism_const":0,"x":1063.5959,"y":1006.5758,"z":6.8422,"mile":22,"ring_num":"10226","section_num":"A"},{"name":"D23","point_type":1,"target_type":0,"prism_const":0,"x":1068.892,"y":1007.4235,"z":6.8147,"mile":23,"ring_num":"10231","section_num":"A"},{"name":"D24","point_type":1,"target_type":0,"prism_const":0,"x":1073.6595,"y":1008.2878,"z":6.796,"mile":24,"ring_num":"10236","section_num":"A"},{"name":"D25","point_type":1,"target_type":0,"prism_const":0,"x":1078.8468,"y":1009.2604,"z":6.769,"mile":25,"ring_num":"10241","section_num":"A"},{"name":"D26","point_type":1,"target_type":0,"prism_const":0,"x":1082.9813,"y":1010.1291,"z":6.7579,"mile":26,"ring_num":"10246","section_num":"A"},{"name":"D27","point_type":1,"target_type":0,"prism_const":0,"x":1091.6748,"y":1012.1099,"z":6.7157,"mile":27,"ring_num":"10256","section_num":"A"},{"name":"D28","point_type":1,"target_type":0,"prism_const":0,"x":1101.4422,"y":1014.5984,"z":6.6781,"mile":28,"ring_num":"10266","section_num":"A"},{"name":"D29","point_type":1,"target_type":0,"prism_const":0,"x":1110.5239,"y":1017.2022,"z":6.6288,"mile":29,"ring_num":"10276","section_num":"A"},{"name":"HS01","point_type":0,"target_type":0,"prism_const":0,"x":916.4994,"y":1013.1303,"z":9.4733,"mile":0,"ring_num":"0","section_num":"A"},{"name":"HS02","point_type":0,"target_type":0,"prism_const":0,"x":912.9293,"y":1014.2481,"z":8.7872,"mile":0,"ring_num":"0","section_num":"A"},{"name":"HS03","point_type":0,"target_type":0,"prism_const":0,"x":905.9121,"y":1016.4117,"z":9.1606,"mile":0,"ring_num":"0","section_num":"A"},{"name":"HS04","point_type":0,"target_type":0,"prism_const":0,"x":905.9815,"y":1016.5767,"z":10.3656,"mile":0,"ring_num":"0","section_num":"A"},{"name":"HS05","point_type":0,"target_type":0,"prism_const":0,"x":1139.0693,"y":1023.8735,"z":8.4864,"mile":0,"ring_num":"0","section_num":"A"},{"name":"HS06","point_type":0,"target_type":0,"prism_const":0,"x":1140.958,"y":1024.6962,"z":7.8532,"mile":0,"ring_num":"0","section_num":"A"},{"name":"HS07","point_type":0,"target_type":0,"prism_const":0,"x":1149.7571,"y":1028.3556,"z":8.1426,"mile":0,"ring_num":"0","section_num":"A"},{"name":"HS08","point_type":0,"target_type":0,"prism_const":0,"x":1144.1494,"y":1026.1209,"z":9.3628,"mile":0,"ring_num":"0","section_num":"A"},{"name":"L01","point_type":1,"target_type":0,"prism_const":0,"x":943.1342,"y":1006.5582,"z":9.018,"mile":1,"ring_num":"10106","section_num":"A"},{"name":"L02","point_type":1,"target_type":0,"prism_const":0,"x":951.0964,"y":1004.9826,"z":8.9524,"mile":2,"ring_num":"10116","section_num":"A"},{"name":"L03","point_type":1,"target_type":0,"prism_const":0,"x":963.6202,"y":1002.9754,"z":8.5118,"mile":3,"ring_num":"10126","section_num":"A"},{"name":"L04","point_type":1,"target_type":0,"prism_const":0,"x":972.6181,"y":1001.8287,"z":8.5666,"mile":4,"ring_num":"10136","section_num":"A"},{"name":"L05","point_type":1,"target_type":0,"prism_const":0,"x":976.6353,"y":1001.3704,"z":8.6908,"mile":5,"ring_num":"10141","section_num":"A"},{"name":"L06","point_type":1,"target_type":0,"prism_const":0,"x":982.8456,"y":1000.8298,"z":8.4985,"mile":6,"ring_num":"10146","section_num":"A"},{"name":"L07","point_type":1,"target_type":0,"prism_const":0,"x":989.4872,"y":1000.3071,"z":8.699,"mile":7,"ring_num":"10151","section_num":"A"},{"name":"L08","point_type":1,"target_type":0,"prism_const":0,"x":992.9991,"y":1000.1206,"z":8.4379,"mile":8,"ring_num":"10156","section_num":"A"},{"name":"L09","point_type":1,"target_type":0,"prism_const":0,"x":996.455,"y":999.8774,"z":8.6527,"mile":9,"ring_num":"10161","section_num":"A"},{"name":"L10","point_type":1,"target_type":0,"prism_const":0,"x":1003.9726,"y":999.6009,"z":8.5613,"mile":10,"ring_num":"10166","section_num":"A"},{"name":"L11","point_type":1,"target_type":0,"prism_const":0,"x":1008.4677,"y":999.5365,"z":8.4487,"mile":11,"ring_num":"10171","section_num":"A"},{"name":"L12","point_type":1,"target_type":0,"prism_const":0,"x":1013.5461,"y":999.5323,"z":8.4249,"mile":12,"ring_num":"10176","section_num":"A"},{"name":"L13","point_type":1,"target_type":0,"prism_const":0,"x":1019.0091,"y":999.5938,"z":8.4619,"mile":13,"ring_num":"10181","section_num":"A"},{"name":"L14","point_type":1,"target_type":0,"prism_const":0,"x":1024.1098,"y":999.7452,"z":8.3666,"mile":14,"ring_num":"10186","section_num":"A"},{"name":"L15","point_type":1,"target_type":0,"prism_const":0,"x":1029.8007,"y":999.9866,"z":8.3584,"mile":15,"ring_num":"10191","section_num":"A"},{"name":"L16","point_type":1,"target_type":0,"prism_const":0,"x":1034.1214,"y":1000.2315,"z":8.3929,"mile":16,"ring_num":"10196","section_num":"A"},{"name":"L17","point_type":1,"target_type":0,"prism_const":0,"x":1038.9989,"y":1000.5812,"z":8.3552,"mile":17,"ring_num":"10201","section_num":"A"},{"name":"L18","point_type":1,"target_type":0,"prism_const":0,"x":1044.1345,"y":1001.0142,"z":8.3374,"mile":18,"ring_num":"10206","section_num":"A"},{"name":"L19","point_type":1,"target_type":0,"prism_const":0,"x":1049.7221,"y":1001.5764,"z":8.364,"mile":19,"ring_num":"10211","section_num":"A"},{"name":"L20","point_type":1,"target_type":0,"prism_const":0,"x":1053.611,"y":1001.9763,"z":8.6652,"mile":20,"ring_num":"10216","section_num":"A"},{"name":"L21","point_type":1,"target_type":0,"prism_const":0,"x":1059.6168,"y":1002.7994,"z":8.3161,"mile":21,"ring_num":"10221","section_num":"A"},{"name":"L22","point_type":1,"target_type":0,"prism_const":0,"x":1064.6595,"y":1003.5534,"z":8.3396,"mile":22,"ring_num":"10226","section_num":"A"},{"name":"L23","point_type":1,"target_type":0,"prism_const":0,"x":1069.4245,"y":1004.3323,"z":8.2345,"mile":23,"ring_num":"10231","section_num":"A"},{"name":"L24","point_type":1,"target_type":0,"prism_const":0,"x":1075.14,"y":1005.3539,"z":8.2311,"mile":24,"ring_num":"10236","section_num":"A"},{"name":"L25","point_type":1,"target_type":0,"prism_const":0,"x":1079.7478,"y":1006.2453,"z":8.2722,"mile":25,"ring_num":"10241","section_num":"A"},{"name":"L26","point_type":1,"target_type":0,"prism_const":0,"x":1084.0296,"y":1007.1626,"z":8.1012,"mile":26,"ring_num":"10246","section_num":"A"},{"name":"L27","point_type":1,"target_type":0,"prism_const":0,"x":1092.5413,"y":1009.0839,"z":8.1509,"mile":27,"ring_num":"10256","section_num":"A"},{"name":"L28","point_type":1,"target_type":0,"prism_const":0,"x":1102.8906,"y":1011.7389,"z":8.0446,"mile":28,"ring_num":"10266","section_num":"A"},{"name":"L29","point_type":1,"target_type":0,"prism_const":0,"x":1111.6195,"y":1014.2663,"z":8.0586,"mile":29,"ring_num":"10276","section_num":"A"},{"name":"LJD01","point_type":1,"target_type":0,"prism_const":0,"x":1010.356,"y":1004.826,"z":9.1166,"mile":0,"ring_num":"0","section_num":"A"},{"name":"LJD02","point_type":1,"target_type":0,"prism_const":0,"x":1010.9517,"y":999.4967,"z":8.6223,"mile":0,"ring_num":"0","section_num":"A"},{"name":"LJD03","point_type":1,"target_type":0,"prism_const":0,"x":1047.4675,"y":1001.3227,"z":8.5658,"mile":0,"ring_num":"0","section_num":"A"},{"name":"LJD04","point_type":1,"target_type":0,"prism_const":0,"x":1046.4022,"y":1006.6131,"z":8.9954,"mile":0,"ring_num":"0","section_num":"A"},{"name":"R01","point_type":1,"target_type":0,"prism_const":0,"x":943.8896,"y":1011.8129,"z":8.5747,"mile":1,"ring_num":"10106","section_num":"A"},{"name":"R02","point_type":1,"target_type":0,"prism_const":0,"x":953.5094,"y":1009.867,"z":8.4118,"mile":2,"ring_num":"10116","section_num":"A"},{"name":"R03","point_type":1,"target_type":0,"prism_const":0,"x":964.0059,"y":1008.1102,"z":8.3447,"mile":3,"ring_num":"10126","section_num":"A"},{"name":"R04","point_type":1,"target_type":0,"prism_const":0,"x":973.2318,"y":1006.9788,"z":8.3332,"mile":4,"ring_num":"10136","section_num":"A"},{"name":"R05","point_type":1,"target_type":0,"prism_const":0,"x":977.1374,"y":1006.548,"z":8.3054,"mile":5,"ring_num":"10141","section_num":"A"},{"name":"R06","point_type":1,"target_type":0,"prism_const":0,"x":983.4129,"y":1005.9462,"z":8.2679,"mile":6,"ring_num":"10146","section_num":"A"},{"name":"R07","point_type":1,"target_type":0,"prism_const":0,"x":989.0872,"y":1005.5497,"z":8.2722,"mile":7,"ring_num":"10151","section_num":"A"},{"name":"R08","point_type":1,"target_type":0,"prism_const":0,"x":993.1327,"y":1005.277,"z":8.2492,"mile":8,"ring_num":"10156","section_num":"A"},{"name":"R09","point_type":1,"target_type":0,"prism_const":0,"x":998.2199,"y":1005.0404,"z":8.221,"mile":9,"ring_num":"10161","section_num":"A"},{"name":"R10","point_type":1,"target_type":0,"prism_const":0,"x":1003.384,"y":1004.8737,"z":8.3514,"mile":10,"ring_num":"10166","section_num":"A"},{"name":"R11","point_type":1,"target_type":0,"prism_const":0,"x":1008.1572,"y":1004.7036,"z":8.1847,"mile":11,"ring_num":"10171","section_num":"A"},{"name":"R12","point_type":1,"target_type":0,"prism_const":0,"x":1013.5648,"y":1004.7045,"z":8.179,"mile":12,"ring_num":"10176","section_num":"A"},{"name":"R13","point_type":1,"target_type":0,"prism_const":0,"x":1018.497,"y":1004.8243,"z":8.2593,"mile":13,"ring_num":"10181","section_num":"A"},{"name":"R14","point_type":1,"target_type":0,"prism_const":0,"x":1023.5318,"y":1004.9154,"z":8.1074,"mile":14,"ring_num":"10186","section_num":"A"},{"name":"R15","point_type":1,"target_type":0,"prism_const":0,"x":1029.2626,"y":1005.1743,"z":8.0799,"mile":15,"ring_num":"10191","section_num":"A"},{"name":"R16","point_type":1,"target_type":0,"prism_const":0,"x":1034.1628,"y":1005.4852,"z":8.1161,"mile":16,"ring_num":"10196","section_num":"A"},{"name":"R17","point_type":1,"target_type":0,"prism_const":0,"x":1038.6302,"y":1005.8274,"z":8.1242,"mile":17,"ring_num":"10201","section_num":"A"},{"name":"R18","point_type":1,"target_type":0,"prism_const":0,"x":1043.4353,"y":1006.212,"z":8.0526,"mile":18,"ring_num":"10206","section_num":"A"},{"name":"R19","point_type":1,"target_type":0,"prism_const":0,"x":1048.4384,"y":1006.7059,"z":8.0336,"mile":19,"ring_num":"10211","section_num":"A"},{"name":"R20","point_type":1,"target_type":0,"prism_const":0,"x":1053.9859,"y":1007.3635,"z":8.0195,"mile":20,"ring_num":"10216","section_num":"A"},{"name":"R21","point_type":1,"target_type":0,"prism_const":0,"x":1058.8177,"y":1008.0077,"z":7.9944,"mile":21,"ring_num":"10221","section_num":"A"},{"name":"R22","point_type":1,"target_type":0,"prism_const":0,"x":1063.4996,"y":1008.7122,"z":7.9971,"mile":22,"ring_num":"10226","section_num":"A"},{"name":"R23","point_type":1,"target_type":0,"prism_const":0,"x":1068.1751,"y":1009.476,"z":7.9818,"mile":23,"ring_num":"10231","section_num":"A"},{"name":"R24","point_type":1,"target_type":0,"prism_const":0,"x":1073.2285,"y":1010.3356,"z":7.9619,"mile":24,"ring_num":"10236","section_num":"A"},{"name":"R25","point_type":1,"target_type":0,"prism_const":0,"x":1078.3072,"y":1011.3041,"z":7.916,"mile":25,"ring_num":"10241","section_num":"A"},{"name":"R26","point_type":1,"target_type":0,"prism_const":0,"x":1082.5743,"y":1012.1927,"z":7.928,"mile":26,"ring_num":"10246","section_num":"A"},{"name":"R27","point_type":1,"target_type":0,"prism_const":0,"x":1091.6234,"y":1014.2866,"z":7.8979,"mile":27,"ring_num":"10256","section_num":"A"},{"name":"R28","point_type":1,"target_type":0,"prism_const":0,"x":1101.4647,"y":1016.661,"z":7.5051,"mile":28,"ring_num":"10266","section_num":"A"},{"name":"R29","point_type":1,"target_type":0,"prism_const":0,"x":1110.1127,"y":1019.2708,"z":7.791,"mile":29,"ring_num":"10276","section_num":"A"}]';
       //加载数据
       this.points = JSON.parse(newLocal);
-      for(let i = 0; i<this.points.length; i++){
-        let _point = {};
-        _point.x = this.points[i].x;
-        _point.y = this.points[i].y;
-        _point.z = this.points[i].z;
-        this.points[i].x = _point.y;
-        this.points[i].y = _point.z;
-        this.points[i].z = _point.x;
-      }
     },
-    get_param_for_THREE(points, xita) {
-      //添加散点
-      let max_x = points[0].x;
-      let max_y = points[0].y;
-      let max_z = points[0].z;
-      let min_x = points[0].x;
-      let min_y = points[0].y;
-      let min_z = points[0].z;
-      for (var i = 0; i < points.length; i++) {
-        max_x = points[i].x > max_x ? points[i].x : max_x;
-        min_x = points[i].x < min_x ? points[i].x : min_x;
-        max_y = points[i].y > max_y ? points[i].y : max_y;
-        min_y = points[i].y < min_y ? points[i].y : min_y;
-        max_z = points[i].z > max_z ? points[i].z : max_z;
-        min_z = points[i].z < min_z ? points[i].z : min_z;
+    get_param_for_THREE(points, radiusFactor) {
+      /********************用到函数********************/
+
+      /*
+       *
+       *                   Y(z)
+       *                   |
+       *                   |
+       *                   |
+       *                E  . . . . . . . . . . . . . . . . . . . . . . . . . . . .  H
+       *                 . |                                                   . .
+       *               .   |                                                 .   .
+       *             .     |                                               .     .
+       *        F  . . . . . . . . . . . . . . . . . . . . . . . . . . . .  G    .
+       *           .       |                                             .       .                                                 .
+       *           .       |                                             .       .  D
+       *           .    A  .---------------------------------------------.-------.----------> X(y)                                                   .
+       *           .     /                                               .     .
+       *           .   /                                                 .   .
+       *           . /                                                   . .
+       *        B  / . . . . . . . . . . . . . . . . . . . . . . . . . . .  C
+       *         /
+       *       /
+       *     /
+       *   Z(x)
+       *
+       *
+       *
+       */
+
+      /* 0 计算两点之间的长度 */
+      function get_length(point_A, point_B) {
+        return Math.sqrt(
+          Math.pow(point_A.x - point_B.x, 2) +
+            Math.pow(point_A.y - point_B.y, 2) +
+            Math.pow(point_A.z - point_B.z, 2)
+        );
       }
 
-      let dx = max_x - min_x;
-      let dy = max_y - min_y;
-      let dz = max_z - min_z;
-
-      //决定视线方向
-      let dre = dx > dy ? "y" : "x";
-      let x = 0;
-      let y = 0;
-      let z = 0;
-      let s = 0;
-
-      if (dre === "x") {
-        x = (0.5 * dy) / Math.tan(xita * 0.5) + min_x;
-        y = min_y + 0.5 * dy;
-        z = min_z + 0.5 * dz;
-        s = x - min_x;
-      } else {
-        x = min_x + 0.5 * dx;
-        y = (0.5 * dx) / Math.tan(xita * 0.5) + min_y;
-        z = min_z + 0.5 * dz;
-        s = y - min_y;
+      /* 1 坐标系转换  threeJS坐标系Z轴不朝上 */
+      function coord_convert(points) {
+        //z->y, y->x, x->z
+        for (let i = 0; i < points.length; i++) {
+          let _point = {};
+          _point.x = points[i].x;
+          _point.y = points[i].y;
+          _point.z = points[i].z;
+          points[i].x = _point.y;
+          points[i].y = _point.z;
+          points[i].z = _point.x;
+        }
       }
 
-      return {
-        max_x: max_x,
-        min_x: min_x,
-        max_y: max_y,
-        min_y: min_y,
-        max_z: max_z,
-        min_z: min_z,
-        x: min_x + 0.8*s,
-        y: min_y + 0.8*s,
-        z: min_z + 0.8*s,
-        s: s,
-        x0: min_x + 0.5 * dx,
-        y0: min_y + 0.5 * dy,
-        z0: min_z + 0.5 * dz
+      /* 2 获得点集所在空间长方体角点以及半径 */
+      function get_corner_and_radius(points) {
+        let max_x = points[0].x;
+        let max_y = points[0].y;
+        let max_z = points[0].z;
+        let min_x = points[0].x;
+        let min_y = points[0].y;
+        let min_z = points[0].z;
+
+        for (var i = 0; i < points.length; i++) {
+          max_x = points[i].x > max_x ? points[i].x : max_x;
+          min_x = points[i].x < min_x ? points[i].x : min_x;
+          max_y = points[i].y > max_y ? points[i].y : max_y;
+          min_y = points[i].y < min_y ? points[i].y : min_y;
+          max_z = points[i].z > max_z ? points[i].z : max_z;
+          min_z = points[i].z < min_z ? points[i].z : min_z;
+        }
+
+        //中心点
+        var point_O = {
+          x: 0.5 * (min_x + max_x),
+          y: 0.5 * (min_y + max_y),
+          z: 0.5 * (min_z + max_z)
+        };
+
+        //原点A
+        var point_A = {
+          x: min_x,
+          y: min_y,
+          z: min_z
+        };
+        //
+        var point_B = {
+          x: min_x,
+          y: min_y,
+          z: max_z
+        };
+        var point_C = {
+          x: max_x,
+          y: min_y,
+          z: max_z
+        };
+        var point_D = {
+          x: max_x,
+          y: min_y,
+          z: min_z
+        };
+        var point_E = {
+          x: min_x,
+          y: max_y,
+          z: min_z
+        };
+        var point_F = {
+          x: min_x,
+          y: max_y,
+          z: max_z
+        };
+        var point_G = {
+          x: max_x,
+          y: max_y,
+          z: max_z
+        };
+        var point_H = {
+          x: max_x,
+          y: max_y,
+          z: min_z
+        };
+
+        //计算半径，鉴于对称关系，只需要计算一个平面上的四条线，就可以找到半径
+        let OA = get_length(point_O, point_A);
+        let OB = get_length(point_O, point_B);
+        let OC = get_length(point_O, point_C);
+        let OD = get_length(point_O, point_D);
+
+        let radius = Math.max(OA, OB, OC, OD);
+
+        return {
+          point_O: point_O,
+          point_A: point_A,
+          point_B: point_B,
+          point_C: point_C,
+          point_D: point_D,
+          point_E: point_E,
+          point_F: point_F,
+          point_G: point_G,
+          point_H: point_H,
+          radius: radius
+        };
+      }
+
+      let result = new Object();
+
+      coord_convert(points);
+      result = get_corner_and_radius(points);
+      result.camera = {
+        x: result.point_O.x + (result.radius * radiusFactor) / 1.73,
+        y: result.point_O.y + (result.radius * radiusFactor) / 1.73,
+        z: result.point_O.z + (result.radius * radiusFactor) / 1.73
       };
+      return result;
     },
     showPoint(element_id, points) {
+      /*************** *点集数据准备，参数计算* ***************/
+      let radiusFactor = 2; //相机到物件的半径影响因子
+
+      let param_res = this.get_param_for_THREE(points, radiusFactor);
+
+      /*********************************THREEJS******************************************/
       var wind = document.getElementById(element_id);
       let width = wind.clientWidth;
       let height = wind.clientHeight;
 
+      //创建渲染器
+      var renderer = new THREE.WebGLRenderer({
+        antialias: true
+      });
+      //设置渲染器背景色与尺寸
+      renderer.setClearColor(new THREE.Color(0xeeeeee));
+      renderer.setSize(width, height);
+      //将渲染器加载到html
+      wind.appendChild(renderer.domElement);
+
       //创建一个场景
       let scene = new THREE.Scene();
-
-      //计算渲染参数的函数
-      let sita = 60; //视角，60°
-      let param_res = this.get_param_for_THREE(points, (Math.PI * sita) / 180);
 
       //创建一个具有透视效果的相机
       let camera = new THREE.PerspectiveCamera(
         80,
         width / width,
         0.1,
-        param_res.x0,
-        param_res.y0,
-        param_res.z0
+        (radiusFactor + 1) * param_res.radius
       );
 
+      // 初始化摄像机插件（用于拖拽旋转摄像机，产生交互效果）
+      var controls = new OrbitControls(camera, renderer.domElement);
       //设置相机位置
-      camera.position.set(param_res.x, param_res.y, param_res.z);
-      camera.lookAt({ x: param_res.x0, y: param_res.y0, z: param_res.z0 });
+      camera.position.set(
+        param_res.camera.x,
+        param_res.camera.y,
+        param_res.camera.z
+      );
+      camera.lookAt(param_res.point_O);
 
-      //创建渲染器
-      var renderer = new THREE.WebGLRenderer({
-        antialias: true
-      });
-
-      //设置渲染器背景色与尺寸
-      renderer.setClearColor(new THREE.Color(0xeeeeee));
-      renderer.setSize(width, height);
-
-      //将渲染器加载到html
-      wind.appendChild(renderer.domElement);
-
-      //创建环境光
+      //创建环境光，没有环境光，点颜色出不来
       let ambientLight = new THREE.AmbientLight(0x777777);
       scene.add(ambientLight);
 
-      //添加聚光灯
-      let spotLight = new THREE.SpotLight(0xaaaaaa);
-      spotLight.position.set(-40, 40, 40);
-      scene.add(spotLight);
-
-      // 初始化摄像机插件（用于拖拽旋转摄像机，产生交互效果）
-      var orbitControls = new OrbitControls(camera);
-      orbitControls.autoRotate = true;
-      orbitControls.object.position.set(param_res.x, param_res.y, param_res.z);
-      orbitControls.target = new THREE.Vector3(
-        param_res.x0,
-        param_res.y0,
-        param_res.z0
+      controls.object.position.set(
+        param_res.camera.x,
+        param_res.camera.y,
+        param_res.camera.z
       );
-
-      var point_A = {
-        x: param_res.max_x,
-        y: param_res.min_y,
-        z: param_res.min_z
-      };
-
-      var point_B = {
-        x: param_res.max_x,
-        y: param_res.max_y,
-        z: param_res.min_z
-      };
-      var point_C = {
-        x: param_res.min_x,
-        y: param_res.max_y,
-        z: param_res.min_z
-      };
-      var point_D = {
-        x: param_res.min_x,
-        y: param_res.min_y,
-        z: param_res.min_z
-      };
-      var point_E = {
-        x: param_res.max_x,
-        y: param_res.min_y,
-        z: param_res.max_z
-      };
-      var point_F = {
-        x: param_res.max_x,
-        y: param_res.max_y,
-        z: param_res.max_z
-      };
-      var point_G = {
-        x: param_res.min_x,
-        y: param_res.max_y,
-        z: param_res.max_z
-      };
-      var point_H = {
-        x: param_res.min_x,
-        y: param_res.min_y,
-        z: param_res.max_z
-      };
+      controls.target = new THREE.Vector3(
+        param_res.point_O.x,
+        param_res.point_O.y,
+        param_res.point_O.z
+      );
 
       //文字函数
       function add_text(style, text, position) {
@@ -245,14 +292,9 @@ export default {
         curveSegments: 30, //弧线分段数，使得文字的曲线更加光滑
         bevelEnabled: false //布尔值，是否使用倒角，意为在边缘处斜切};
       };
-      add_text(text_style, "X", point_A);
-      //add_text(text_style, "B", point_B);
-      add_text(text_style, "Y", point_C);
-      //add_text(text_style, "D", point_D);
-      //add_text(text_style, "E", point_E);
-      //add_text(text_style, "F", point_F);
-      //add_text(text_style, "G", point_G);
-      add_text(text_style, "Z", point_H);
+      add_text(text_style, "X", param_res.point_B);
+      add_text(text_style, "Y", param_res.point_D);
+      add_text(text_style, "Z", param_res.point_E);
 
       //画外框
       var style = {
@@ -262,20 +304,19 @@ export default {
         dashSize: 0.1,
         gapSize: 1
       };
-      drawline(style, point_A, point_B);
-      drawline(style, point_B, point_C);
-      drawline(style, point_C, point_D);
-      drawline(style, point_D, point_A);
-      drawline(style, point_E, point_F);
-      drawline(style, point_F, point_G);
-      drawline(style, point_G, point_H);
-      drawline(style, point_H, point_E);
-      drawline(style, point_A, point_E);
-      drawline(style, point_D, point_H);
-      drawline(style, point_B, point_F);
-      drawline(style, point_C, point_G);
+      drawline(style, param_res.point_A, param_res.point_B);
+      drawline(style, param_res.point_B, param_res.point_C);
+      drawline(style, param_res.point_C, param_res.point_D);
+      drawline(style, param_res.point_D, param_res.point_A);
+      drawline(style, param_res.point_E, param_res.point_F);
+      drawline(style, param_res.point_F, param_res.point_G);
+      drawline(style, param_res.point_G, param_res.point_H);
+      drawline(style, param_res.point_H, param_res.point_E);
+      drawline(style, param_res.point_A, param_res.point_E);
+      drawline(style, param_res.point_D, param_res.point_H);
+      drawline(style, param_res.point_B, param_res.point_F);
+      drawline(style, param_res.point_C, param_res.point_G);
 
-      //画坐标轴
       //原点
       add_text(
         {
@@ -290,34 +331,50 @@ export default {
           bevelEnabled: false //布尔值，是否使用倒角，意为在边缘处斜切};
         },
         "(" +
-          point_D.x.toString() +
+          param_res.point_A.x.toString() +
           ", " +
-          point_D.y.toString() +
+          param_res.point_A.y.toString() +
           ", " +
-          point_D.z.toString() +
+          param_res.point_A.z.toString() +
           ")",
-        point_D
+        param_res.point_A
       );
       //x轴
       drawline(
         { color: 0x000000, linewidth: 2, basic: true },
-        point_D,
-        point_A
+        param_res.point_A,
+        param_res.point_B
       );
 
       //y轴
       drawline(
         { color: 0x00ff00, linewidth: 2, basic: true },
-        point_D,
-        point_C
+        param_res.point_A,
+        param_res.point_D
       );
 
       //z轴
       drawline(
         { color: 0xff0000, linewidth: 2, basic: true },
-        point_D,
-        point_H
+        param_res.point_A,
+        param_res.point_E
       );
+
+      //坐标格网
+      /*var size = Math.max(
+        1.2 * (param_res.max_x - param_res.min_x),
+        1.2 * (param_res.max_y - param_res.min_y),
+        1.2 * (param_res.max_z - param_res.min_z)
+      );
+      var divisions = 100;
+
+      var gridHelper = new THREE.GridHelper(size, divisions);
+      gridHelper.position.x =
+        param_res.min_x + (param_res.max_x - param_res.min_x) * 0.5;
+      gridHelper.position.y = 0;
+      gridHelper.position.z =
+        param_res.min_z + (param_res.max_z - param_res.min_z) * 0.5;
+      scene.add(gridHelper);*/
 
       //画点
       for (let i = 0; i < points.length; i++) {
