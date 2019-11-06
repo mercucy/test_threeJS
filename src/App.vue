@@ -41,13 +41,14 @@ export default {
           let count = 0;
           arrStr.forEach(line => {
             if (line.length !== 0) {
-              if (count % 3 === 0) {
+              if (count % 1 === 0) {
                 let vecStr = line.split(",");
                 that.points.push({
-                  x: parseFloat(vecStr[0]),
-                  y: parseFloat(vecStr[1]),
-                  z: parseFloat(vecStr[2]),
-                  color: parseFloat(vecStr[3])
+                  x: parseFloat(vecStr[4]),
+                  y: parseFloat(vecStr[5]),
+                  z: parseFloat(vecStr[6]),
+                  section: vecStr[7],
+                  pos: vecStr[9]
                 });
               }
               count++;
@@ -408,6 +409,8 @@ export default {
 
       let geometry = new THREE.Geometry();
       //画点
+      let mapSection = new Map();
+      let mapVertical = new Map();
       for (let i = 0; i < points.length; i++) {
         /*
         var sphereGeometry = new THREE.SphereGeometry(0.5, 10, 10);
@@ -423,14 +426,91 @@ export default {
         sphere.position.z = points[i].z;
         scene.add(sphere);*/
 
+        //断面匹配
+        if (points[i].section === "-") continue;
+        if (!mapSection.has(points[i].section)) {
+          mapSection.set(points[i].section, [points[i]]);
+        } else {
+          mapSection.get(points[i].section).push(points[i]);
+        }
+
+        if (!mapVertical.has(points[i].pos)) {
+          mapVertical.set(points[i].pos, [points[i]]);
+        } else {
+          mapVertical.get(points[i].pos).push(points[i]);
+        }
+
         let vertex = new THREE.Vector3(points[i].x, points[i].y, points[i].z);
         geometry.vertices.push(vertex);
       }
       console.log("加载点");
-      let material = new THREE.PointsMaterial({ size: 0.1, color: 0x0000ff });
+      let material = new THREE.PointsMaterial({ size: 1, color: 0x0000ff });
       let partcle = new THREE.Points(geometry, material);
       scene.add(partcle);
       console.log("加载完成！");
+
+      //画断面
+      mapSection.forEach(section_points => {
+        let section_vector = {};
+        if (section_points.length === 5) {
+          for (let k = 0; k < section_points.length; k++) {
+            section_vector[section_points[k].pos] = new THREE.Vector3(
+              section_points[k].x,
+              section_points[k].y,
+              section_points[k].z
+            );
+          }
+          let curve = new THREE.CatmullRomCurve3(
+            [
+              section_vector.A,
+              section_vector.C,
+              section_vector.L,
+              section_vector.R,
+              section_vector.D
+            ],
+            true,
+            "centripetal",
+            20
+          );
+
+          var _points = curve.getPoints(50);
+          var _geometry = new THREE.BufferGeometry().setFromPoints(_points);
+          var _material = new THREE.LineBasicMaterial({ color: 0xff0000 });
+          var splineObject = new THREE.Line(_geometry, _material);
+
+          scene.add(splineObject);
+        }
+      });
+
+      //画断面轴线
+      mapVertical.forEach((vertical_points, key, map) => {
+        if (key !== "-") {
+          let section_vector = [];
+          for (let k = 0; k < vertical_points.length; k++) {
+            //if(vertical_points[k].sec)
+            section_vector.push(
+              new THREE.Vector3(
+                vertical_points[k].x,
+                vertical_points[k].y,
+                vertical_points[k].z
+              )
+            );
+          }
+          let curve = new THREE.CatmullRomCurve3(
+            section_vector,
+            false,
+            "centripetal",
+            20
+          );
+
+          var _points = curve.getPoints(50);
+          var _geometry = new THREE.BufferGeometry().setFromPoints(_points);
+          var _material = new THREE.LineBasicMaterial({ color: 0xff0000 });
+          var splineObject = new THREE.Line(_geometry, _material);
+
+          scene.add(splineObject);
+        }
+      });
 
       function render(param_res) {
         // 渲染，即摄像机拍下此刻的场景
