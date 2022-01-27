@@ -13,7 +13,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "three": "^0.107.0",
+    "three": "^0.137.0",
     "three-orbitcontrols": "^2.102.2",
     "three-text2d": "^0.5.3",
     "vue": "^2.5.2",
